@@ -46,9 +46,9 @@ const Home: React.FC = () => {
 					help monitor and remediate their performance issues.
 				</li>
 				<li>
-					<strong className="highlight">NextJS</strong> - I've been a bit frustrated with
+					<strong className="highlight">Next.js</strong> - I've been a bit frustrated with
 					the GatsbyJS DX recently so I've been playing and migrating this website over to
-					NextJS. I'm also pushing to build a static site product using NextJS at BLD for
+					Next.js. I'm also pushing to build a static site product using Next.js at BLD for
 					clients who need a simple, static solution for their website.
 				</li>
 			</ul>

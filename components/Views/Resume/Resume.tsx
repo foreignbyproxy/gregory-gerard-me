@@ -39,15 +39,15 @@ const Resume: React.FC = () => {
 						<strong>Languages:</strong> JavaScript/Typescript, HTML, CSS, PHP
 					</li>
 					<li>
-						<strong>Frameworks/Libraries:</strong> React, NextJS, Jest, Gatsby,
-						Tailwind, Svelte,
+						<strong>Frameworks/Libraries:</strong> React, Next.js, Jest, Gatsby,
+						Tailwind, Svelte
 					</li>
 					<li>
 						<strong>APIs:</strong> SendGrid, Twilio, Google Analytics, PayPal, Stripe
 					</li>
 					<li>
 						<strong>Other:</strong> Node, GraphQL, Sentry, Serverless, Git, CI/CD,
-						Firebase, Github, Bitbucket, Sass, Google Cloud Platform, Postman,
+						Firebase, Github, Bitbucket, Sass, Google Cloud Platform, Postman
 					</li>
 				</ul>
 			</section>
