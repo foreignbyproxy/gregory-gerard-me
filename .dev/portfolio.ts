@@ -14,7 +14,7 @@ const portfolio: Portfolio[] = [
 	},
 	{
 		name: "Advance Sign Group",
-		url: "https://asg.bldbuild.net",
+		url: "https://www.advancesigngroup.com/",
 		description: "Marketing website for Advance Sign Group",
 		keywords: ["WordPress"],
 		img: "asg.jpg",
@@ -71,48 +71,23 @@ const portfolio: Portfolio[] = [
 		order: 6,
 	},
 	{
-		name: "Westside Barbell",
-		url: "https://www.westside-barbell.com/",
-		description: "Redesign and support marketing strategies.",
-		keywords: ["Shopify", "Marketing", "Analytics"],
-		img: "wsb.jpg",
-		type: "feature",
-		order: 7,
-	},
-	{
-		name: "Tech II",
-		url: "https://techii.com/",
-		description: "Full website build and launch",
-		keywords: ["WordPress"],
-		img: "tech2.jpg",
-		type: "feature",
-		order: 8,
-	},
-	{
 		name: "BLD Dev",
 		description:
 			"A Node CLI to help BLD developers automate new website scafolding and perform common tasks",
-		keywords: ["Node", "CommonJS", "CLI"],
-		img: "bld-dev.jpg",
+		keywords: ["Node", "TypeScript", "CLI"],
 	},
 	{
-		name: "America's Floor Source",
-		url: "https://www.americasfloorsource.com/",
+		name: "Cryptodono",
+		url: "https://github.com/foreignbyproxy/cryptodono",
 		description:
-			"Marketing and e-commerce solution for one of the largest flooring strores in the midwest",
-		keywords: ["WordPress", "E-Commerce"],
+			"A prototype crypto donation platform for content creators.",
+		keywords: ["NextJS", "Web3", "Crypto"],
 	},
 	{
-		name: "City of Hilliard",
-		url: "https://hilliardohio.gov/",
-		description: "Build and launch website for the City of Hilliard",
-		keywords: ["WordPress"],
-	},
-	{
-		name: "Liquibox",
-		url: "https://www.liquibox.com/",
-		description: "Implement internationalization strategy and support marketing",
-		keywords: ["WordPress", "i18n"],
+		name: "Image Alt Text Generator",
+		description:
+			"An React/Electron app with the purpose of using Microsoft Azure Computer Vision and other image recognition software to generate alt text for images.",
+		keywords: ["Node", "Electron", "React", "Azure"],
 	},
 ];
 

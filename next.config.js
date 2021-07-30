@@ -2,6 +2,7 @@ const withPlugins = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
 
 const nextConfig = {
+	trailingSlash: true,
 	future: {
 		webpack5: true,
 	},
@@ -12,6 +13,15 @@ const nextConfig = {
 		});
 
 		return config;
+	},
+	exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
+		return {
+			"/": { page: "/" },
+			"/blog": { page: "/blog" },
+			"/portfolio": { page: "/portfolio" },
+			"/privacy": { page: "/privacy" },
+			"/resume": { page: "/resume" },
+		};
 	},
 };
 

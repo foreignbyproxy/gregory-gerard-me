@@ -9,6 +9,7 @@ interface Props {
 const Portfolio: React.FC<Props> = ({ feature, other }) => {
 	return (
 		<div className={styles.portfolio}>
+			<p>I've got tons of website and other projects under my belt. Here are some of the most recent ones.</p>
 			<h2>Featured</h2>
 			<div className={styles.features}>
 				{feature &&
