@@ -1,26 +1,13 @@
-const portfolio: Portfolio[] = [
-	{
-		name: "Blue Laser Digital",
-		url: "https://www.bluelaserdigital.com",
-		description: "Marketing website for BLD",
-		listItems: [
-			"Complete build and launch",
-			"On going performance optimizations and monitoring",
-		],
-		keywords: ["WordPress"],
-		img: "bld.jpg",
-		type: "feature",
-		order: 3,
-	},
-	{
-		name: "Advance Sign Group",
-		url: "https://www.advancesigngroup.com/",
-		description: "Marketing website for Advance Sign Group",
-		keywords: ["WordPress"],
-		img: "asg.jpg",
-		type: "feature",
-		order: 4,
-	},
+interface Portfolio {
+	name: string;
+	description: string;
+	keywords: string[];
+	url?: string;
+	listItems?: string[];
+	img?: string;
+}
+
+export const portfolio: Portfolio[] = [
 	{
 		name: "G&J Pepsi PWA",
 		url: "https://gjpepsiapp.com/",
@@ -29,10 +16,8 @@ const portfolio: Portfolio[] = [
 			"React front-end with Firebase backend",
 			"Git-based CI/CD deployment using Bitbucket pipelines",
 		],
-		keywords: ["React", "Firebase", "CI/CD"],
+		keywords: ["React", "Firebase"],
 		img: "gjppwa.jpg",
-		type: "feature",
-		order: 1,
 	},
 	{
 		name: "Health in Motion Network Map",
@@ -44,8 +29,24 @@ const portfolio: Portfolio[] = [
 		],
 		keywords: ["React", "Firebase", "Google Maps"],
 		img: "himnmap.jpg",
-		type: "feature",
-		order: 2,
+	},
+	{
+		name: "Blue Laser Digital",
+		url: "https://www.bluelaserdigital.com",
+		description: "Marketing website for BLD",
+		listItems: [
+			"Complete build and launch",
+			"On going performance optimizations and monitoring",
+		],
+		keywords: ["WordPress"],
+		img: "bld.jpg",
+	},
+	{
+		name: "Advance Sign Group",
+		url: "https://www.advancesigngroup.com/",
+		description: "Marketing website for Advance Sign Group",
+		keywords: ["WordPress"],
+		img: "asg.jpg",
 	},
 	{
 		name: "Hofbrauhaus",
@@ -55,10 +56,8 @@ const portfolio: Portfolio[] = [
 			"Implement redesign for website",
 			"Support giveaway by creating QR code-based user sign-up",
 		],
-		keywords: ["WordPress", "Serverless Functions"],
+		keywords: ["WordPress", "Serverless"],
 		img: "hofbrauhaus.jpg",
-		type: "feature",
-		order: 5,
 	},
 	{
 		name: "Inno-Pak",
@@ -67,9 +66,10 @@ const portfolio: Portfolio[] = [
 		listItems: ["Dynamically generate PDFs", "Implement custom integration with MailChimp"],
 		keywords: ["WordPress", "Marketing"],
 		img: "innopak.jpg",
-		type: "feature",
-		order: 6,
 	},
+];
+
+export const other: Portfolio[] = [
 	{
 		name: "BLD Dev",
 		description:
@@ -79,9 +79,8 @@ const portfolio: Portfolio[] = [
 	{
 		name: "Cryptodono",
 		url: "https://github.com/foreignbyproxy/cryptodono",
-		description:
-			"A prototype crypto donation platform for content creators.",
-		keywords: ["NextJS", "Web3", "Crypto"],
+		description: "A prototype crypto donation platform for content creators.",
+		keywords: ["Web3"],
 	},
 	{
 		name: "Image Alt Text Generator",
@@ -89,6 +88,17 @@ const portfolio: Portfolio[] = [
 			"An React/Electron app with the purpose of using Microsoft Azure Computer Vision and other image recognition software to generate alt text for images.",
 		keywords: ["Node", "Electron", "React", "Azure"],
 	},
-];
+	{
+		name: "Hardhat Simulate Tx",
+		description:
+			"A Hardhat plugin used to simulate Ethereum and ERC-20 token transactions over a local Ethereum network.",
+		keywords: ["TypeScript", "Hardhat", "Ethereum", "Web3"],
+	},
+	{
+		name: "Hardhat Deploy ERC-20 Token",
+		description:
+			"A Hardhat plugin to deploy a standard ERC-20 token over a local Ethereum network.",
+		keywords: ["TypeScript", "Hardhat", "Ethereum", "Web3"],
+	},
 
-export default portfolio;
+];

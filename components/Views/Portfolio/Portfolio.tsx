@@ -1,29 +1,31 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Portfolio.module.scss";
 
-interface Props {
-	feature: Portfolio[];
-	other: Portfolio[];
-}
+import { portfolio, other } from "../../../.dev/portfolio";
 
-const Portfolio: React.FC<Props> = ({ feature, other }) => {
+function Portfolio() {
 	return (
 		<div className={styles.portfolio}>
-			<p>I've got tons of website and other projects under my belt. Here are some of the most recent ones.</p>
+			<p>
+				I&apos;ve got tons of website and other projects under my belt. Here are some of the most
+				recent ones.
+			</p>
 			<h2>Featured</h2>
 			<div className={styles.features}>
-				{feature &&
-					feature.map((item) => {
+				{portfolio &&
+					portfolio.map((item) => {
 						return (
 							<div key={item.name} className={styles.feature}>
-								<a href={item.url} target="_blank" rel="noreferer">
+								<a href={item.url} target="_blank" rel="noreferrer">
 									<div className={styles.featureImage}>
-										<img
+										<Image
 											src={`/images/${item.img}`}
 											alt={`${item.name} website`}
 											loading="lazy"
 											width="500"
 											height="200"
+											layout="fill"
 										/>
 									</div>
 
@@ -59,7 +61,7 @@ const Portfolio: React.FC<Props> = ({ feature, other }) => {
 					other.map((item) => {
 						return (
 							<div key={item.name} className={styles.other}>
-								<a href={item.url} target="_blank" rel="noreferer">
+								<a href={item.url} target="_blank" rel="noreferrer">
 									<div className={styles.content}>
 										<p className={`${styles.title} highlight`}>{item.name}</p>
 										{item.description && (
@@ -78,6 +80,6 @@ const Portfolio: React.FC<Props> = ({ feature, other }) => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default Portfolio;

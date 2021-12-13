@@ -4,8 +4,13 @@ import { useRouter } from "next/router";
 import classnames from "classnames";
 import styles from "./Navigation.module.scss";
 
-export interface Props {
+interface Props {
 	className?: string;
+}
+
+interface NavLink {
+	label: string;
+	href: string;
 }
 
 const links: NavLink[] = [
@@ -27,7 +32,7 @@ const links: NavLink[] = [
 	},
 ];
 
-const Navigation: React.FC<Props> = ({ className }) => {
+function Navigation({ className }: Props) {
 	const router = useRouter();
 	const mainClasses = classnames([styles.navigation, className]);
 
@@ -37,7 +42,7 @@ const Navigation: React.FC<Props> = ({ className }) => {
 				{links.map((link) => {
 					const linkClass = classnames([
 						styles.link,
-						router.pathname === link.href ? styles.active : ""
+						router.pathname === link.href ? styles.active : "",
 					]);
 
 					return (
@@ -51,6 +56,6 @@ const Navigation: React.FC<Props> = ({ className }) => {
 			</ul>
 		</nav>
 	);
-};
+}
 
 export default Navigation;

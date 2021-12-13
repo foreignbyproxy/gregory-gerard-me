@@ -3,7 +3,7 @@ import styles from "./Resume.module.scss";
 
 import ResumeItem from "../../Elements/ResumeItem/ResumeItem";
 
-const Resume: React.FC = () => {
+function Resume() {
 	return (
 		<div className={styles.resume}>
 			<section>
@@ -16,18 +16,17 @@ const Resume: React.FC = () => {
 				>
 					<ul>
 						<li>
-							Scope, plan and execute full-stack web solutions to meet clients’
-							digital marketing goals
+							Scope, plan and execute full-stack web solutions to meet our clients’
+							business goals
 						</li>
 						<li>
-							Developed over 50 websites using a variety of platforms, technologies
-							and APIs
+							Build and maintain over 100 projects using a variety of platforms,
+							frameworks, technologies and APIs
 						</li>
 						<li>Perform website performance audits and remedy performance issues</li>
 						<li>Improved development process through custom tooling</li>
 						<li>
-							Collaborated with design and SEO teams to effectively execute website
-							projects
+							Collaborated with design and SEO teams to effectively execute projects
 						</li>
 					</ul>
 				</ResumeItem>
@@ -36,18 +35,15 @@ const Resume: React.FC = () => {
 				<h2>Technical Skills</h2>
 				<ul className="no-bullet">
 					<li>
-						<strong>Languages:</strong> JavaScript/Typescript, HTML, CSS, PHP
+						<strong>Languages:</strong> JavaScript, TypeScript, HTML, CSS, PHP, Solidity
 					</li>
 					<li>
-						<strong>Frameworks/Libraries:</strong> React, Next.js, Jest, Gatsby,
-						Tailwind, Svelte
+						<strong>Frameworks/Libraries:</strong> React, Next.js, Tailwind, Chakra UI,
+						Jest, React Testing Library, Apollo, Redux, XState
 					</li>
 					<li>
-						<strong>APIs:</strong> SendGrid, Twilio, Google Analytics, PayPal, Stripe
-					</li>
-					<li>
-						<strong>Other:</strong> Node, GraphQL, Sentry, Serverless, Git, CI/CD,
-						Firebase, Github, Bitbucket, Sass, Google Cloud Platform, Postman
+						<strong>Other:</strong> Node.js, Git, Github, CI/CD, Figma, Google Cloud
+						Platform, Firebase, GraphQL
 					</li>
 				</ul>
 			</section>
@@ -74,6 +70,6 @@ const Resume: React.FC = () => {
 			</section>
 		</div>
 	);
-};
+}
 
 export default Resume;

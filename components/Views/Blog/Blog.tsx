@@ -1,14 +1,11 @@
 import React from "react";
-import styles from "./Blog.module.scss";
 
-export interface Props {}
-
-const Blog: React.FC<Props> = () => {
+function Blog() {
 	return (
 		<div>
 			<p>
-				I'm currently writing some blog posts that will be added here soon. Here are some of
-				the topics that I'll be covering:
+				{`I'm currently writing some blog posts that will be added here soon. Here are some of
+				the topics that I'll be covering:`}
 			</p>
 			<ul>
 				<li>Understand the impact of Basic Attention Token (BAT)</li>
@@ -22,6 +19,6 @@ const Blog: React.FC<Props> = () => {
 			</ul>
 		</div>
 	);
-};
+}
 
 export default Blog;

@@ -45,11 +45,6 @@
 
 			border-top-left-radius: 8px;
 			border-top-right-radius: 8px;
-
-			filter: grayscale(1);
-
-			transition: filter 150ms ease-in-out;
-
 		}
 	}
 
@@ -86,11 +81,4 @@
 
 		color: gray;
 	}
-
-	&:hover {
-		img {
-			filter: grayscale(0);
-		}
-	}
-
 }
