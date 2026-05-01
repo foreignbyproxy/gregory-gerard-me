@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import classnames from "classnames";
 import styles from "./Navigation.module.scss";
 
@@ -19,21 +21,13 @@ const links: NavLink[] = [
 		href: "/",
 	},
 	{
-		label: "Blog",
-		href: "/blog",
-	},
-	{
 		label: "Resume",
-		href: "/resume",
-	},
-	{
-		label: "Portfolio",
-		href: "/portfolio",
+		href: "/resume/",
 	},
 ];
 
 function Navigation({ className }: Props) {
-	const router = useRouter();
+	const pathname = usePathname();
 	const mainClasses = classnames([styles.navigation, className]);
 
 	return (
@@ -42,13 +36,13 @@ function Navigation({ className }: Props) {
 				{links.map((link) => {
 					const linkClass = classnames([
 						styles.link,
-						router.pathname === link.href ? styles.active : "",
+						pathname === link.href ? styles.active : "",
 					]);
 
 					return (
 						<li key={link.label}>
-							<Link href={link.href}>
-								<a className={linkClass}>{link.label}</a>
+							<Link href={link.href} className={linkClass}>
+								{link.label}
 							</Link>
 						</li>
 					);
