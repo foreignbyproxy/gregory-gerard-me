@@ -65,6 +65,7 @@ function Home() {
           Through Science by J. Kenji López-Alt
         </li>
         <li>Options as a Strategic Investment</li>
+        <li>Hyperion Cantos by Dan Simmons</li>
       </ul>
     </>
   );
